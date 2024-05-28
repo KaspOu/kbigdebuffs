@@ -1,4 +1,4 @@
-package-as: KBigRaidDebuffs
+package-as: KBigDebuffs
 
 manual-changelog: ChangeLog.txt
 
