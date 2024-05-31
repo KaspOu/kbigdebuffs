@@ -2,7 +2,7 @@ package-as: KBigDebuffs
 
 manual-changelog: ChangeLog.txt
 
-license-output: License.txt
+license-output: License.md
 
 ignore:
     - .vscode
