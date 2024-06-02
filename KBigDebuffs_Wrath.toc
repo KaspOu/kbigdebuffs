@@ -3,7 +3,7 @@
 ## Title-frFR: |cff00ff00K|r Big Debuffs
 ## Notes: Resize buffs & debuffs. Modify max limit
 ## Notes-frFR: Redimensionne les buffs/debuffs. Augmente le nombre d'icones.
-## Version: 10.2.701
+## Version: 10.2.702
 ## Author: Kallye of Elune
 ## SavedVariables: KBigDebuffsOptions
 ## IconTexture: Interface\AddOns\KNameplateColor\Logo32

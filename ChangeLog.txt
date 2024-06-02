@@ -1,3 +1,6 @@
+v10.2.702
+- Buffs & Debuffs can be aligned vertically
+
 v10.2.701
 - First version, extracted big debuffs from Kallye Raid Frames
 - Retail, Classic & Wrath versions
