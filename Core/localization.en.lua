@@ -8,11 +8,12 @@ l.VERS_TITLE    = format("%s %s", ns.TITLE, ns.VERSION);
 
 l.CONFLICT_MESSAGE = "Disabled: Conflict with %s";
 
-l.SUBTITLE      = "Raid Buffs / Debuffs resizing";
+l.SUBTITLE      = "Raid Buffs / Debuffs management";
 l.DESC          = "Changes party/raid Buffs & Debuffs|r\n\n"
-.." - Debuffs and Buffs resizables\n\n"
+.." - Resize buffs/debuffs\n\n"
 .." - Increase max buffs/debuffs displayed\n\n"
 .." - Multiline display\n\n"
+.." - Customizable orientation\n\n"
 l.OPTIONS_TITLE = format("%s - Options", l.VERS_TITLE);
 
 l.MSG_LOADED         = format("%s loaded and active", l.VERS_TITLE);

@@ -9,11 +9,12 @@ l.VERS_TITLE    = format("%s %s", ns.TITLE, ns.VERSION);
 
 l.CONFLICT_MESSAGE = "D\195\169sactiv\195\169 : Conflit avec %s";
 
-l.SUBTITLE      = "Redimensionnement des Buffs / D\195\169buffs";
+l.SUBTITLE      = "Gestion des Buffs / D\195\169buffs";
 l.DESC          = "Change les Buffs & D\195\169buffs de groupe / raid|r\n\n"
-.." - D\195\169buffs et Buffs redimensionnables\n\n"
-.." - Augmente le nombre max de buffs/debuffs affich\195\169s\n\n"
+.." - Redimensionne les buffs/d\195\169buffs \n\n"
+.." - Augmente le nombre max de buffs/d\195\169buffs affich\195\169s\n\n"
 .." - Affichage multilignes\n\n"
+.." - Orientation au choix\n\n"
 l.OPTIONS_TITLE = format("%s - Options", l.VERS_TITLE);
 
 l.MSG_LOADED         = format("%s lanc\195\169 et actif", l.VERS_TITLE);
