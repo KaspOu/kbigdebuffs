@@ -6,7 +6,7 @@
 ## Version: 10.2.702
 ## Author: Kallye of Elune
 ## SavedVariables: KBigDebuffsOptions
-## IconTexture: Interface\AddOns\KNameplateColor\Logo32
+## IconTexture: Interface\AddOns\KBigDebuffs\Logo32
 
 ## X-Category: Unit Frames, Interface Enhancements
 ## X-License: MIT
