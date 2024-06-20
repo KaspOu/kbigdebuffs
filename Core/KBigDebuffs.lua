@@ -132,6 +132,27 @@ end
 local saveOptions = function()
 	ns.SaveOptions(defaultOptions, RequiredReloadOptionsString);
 end
+function ns.InterfaceOptions_AddCategory(frame, addOn, position)
+	if not Settings or not Settings.RegisterCanvasLayoutSubcategory then
+		return InterfaceOptions_AddCategory(frame, addOn, position)
+	end
+    -- cancel is no longer a default option. May add menu extension for this.
+    frame.OnCommit = frame.okay;
+    frame.OnDefault = frame.default;
+    frame.OnRefresh = frame.refresh;
+
+    if frame.parent then -- for subcategories
+        local category = Settings.GetCategory(frame.parent);
+        local subcategory, layout = Settings.RegisterCanvasLayoutSubcategory(category, frame, frame.name, frame.name);
+        subcategory.ID = frame.name;
+        return subcategory, category;
+    else
+        local category, layout = Settings.RegisterCanvasLayoutCategory(frame, frame.name, frame.name);
+        category.ID = frame.name;
+        Settings.RegisterAddOnCategory(category);
+        return category;
+    end
+end
 function KBDUI.OptionsContainer_OnLoad(self, scrollFrame, optionsFrame)
 	if ns.CONFLICT then
 		return;
@@ -142,7 +163,7 @@ function KBDUI.OptionsContainer_OnLoad(self, scrollFrame, optionsFrame)
 	self.name = ns.TITLE;
 	self.okay = saveOptions;
 	self.refresh = refreshOptions;
-	InterfaceOptions_AddCategory(self);
+	ns.InterfaceOptions_AddCategory(self);
 	if (ns.scrollFrame ~= nil) then
 		local BACKDROP_TOOLTIP = {
 			bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background",
